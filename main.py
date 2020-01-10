@@ -7,4 +7,10 @@ input_str = input_str.lower()
 import re
 input_str = 'Box A contains 3 red and 5 white balls, while Box B contains 4 red and 2 blue balls.'
 result = re.sub(r'\d+', '', input_str)
+#print(result)
+#removing punctuations
+import string
+input_str = "This &is [an] example? {of} string. with.? punctuation!!!!" # Sample string
+result = input_str.translate(str.maketrans("","", string.punctuation))
 print(result)
+
